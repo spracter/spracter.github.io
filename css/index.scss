@@ -127,8 +127,10 @@ body {
 }
 
 a {
+	display: inline-block;
 	text-decoration: none;
 	color: #000;
+	// transition: transform 150ms ease-out;
 }
 
 .social-link,
@@ -139,23 +141,29 @@ a {
 	letter-spacing: 1px;
 	font-size: 80%;
 	transform: scale(1);
-	transition: transform 500ms ease-out;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	right: 0;
 
 	span {
 		color: #aaa;
 	}
 
-	&.insta {
-		right: 6.5rem;
-	}
+	// &.insta {
+	//     right: 6.5rem;
+	// }
 }
 
-.social-link:hover {
-	transform: scale(1.05);
+.social-link {
+	bottom: 2.5rem;
 }
+
+// a:hover {
+// 	transform: scale(1.05);
+// }
 
 .copyright {
-	left: 0.75rem;
 	a {
 		border-bottom: 1px solid #aaa;
 	}
